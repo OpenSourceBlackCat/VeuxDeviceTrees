@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2023 The LineageOS Project
-#               2022-2023 The Evolution X Project
+#               2022-2023 The aosp X Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -12,8 +12,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from veux device
 $(call inherit-product, device/xiaomi/veux/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common aosp X stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 EVO_BUILD_TYPE := OFFICIAL
 TARGET_USES_AOSP_RECOVERY := true
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -22,7 +22,7 @@ TARGET_USES_MINI_GAPPS := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
-PRODUCT_NAME := evolution_veux
+PRODUCT_NAME := aosp_veux
 PRODUCT_DEVICE := veux
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
